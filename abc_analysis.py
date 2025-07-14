@@ -79,7 +79,7 @@ df.loc[
 
 # Dodavatel 6 - ak Split_5 existuje -> nejedná sa o 02-S
 df.loc[
-    (df['Dodávateľ'] == 'Dodavatel 6') & (df['Split_3'].notna()),
+    (df['Dodávateľ'] == 'Dodavatel 6') & (df['Split_5'].notna()),
     'Master'
 ] = df['Split_1'] + '-' + df['Split_2'] + '-' + df['Split_3']
 
